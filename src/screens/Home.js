@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
-import { Button, Text } from 'react-native';
 import Header from '../components/Header';
 import MoviesList from '../components/Movies/MoviesList';
+import movies from '../lib/movies.json';
 
 // export default class Home extends PureComponent {
 //   render() {
@@ -15,7 +15,7 @@ import MoviesList from '../components/Movies/MoviesList';
 //   }
 // }
 
-const Home = ({ movies = [] }) => (
+const Home = () => (
   <>
     <Header title="La Cartelera" />
     <MoviesList movies={movies} />

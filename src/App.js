@@ -7,13 +7,8 @@
  */
 
 import React from 'react';
-import {
-  SafeAreaView,
-  StatusBar,
-  StyleSheet,
-} from 'react-native';
-import Home from './screens/Home';
-import movies from './lib/movies.json'
+import { SafeAreaView, StatusBar, StyleSheet } from 'react-native';
+import RootNavigation from './routes/root';
 
 const styles = StyleSheet.create({
   container: {
@@ -25,7 +20,7 @@ const App = () => {
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar barStyle={'dark-content'} />
-      <Home movies={movies} />
+      <RootNavigation />
     </SafeAreaView>
   );
 };

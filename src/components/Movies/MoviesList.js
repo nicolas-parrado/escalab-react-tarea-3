@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
 });
 export default class MoviesList extends PureComponent {
   constructor(props) {
-    super(props)
+    super(props);
 
     this.state = {
       movies: props.movies,
